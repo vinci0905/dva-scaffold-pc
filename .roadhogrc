@@ -1,0 +1,25 @@
+{
+  "entry": "src/index.js",
+  "disableCSSModules": false,
+  "autoprefixer": null,
+  "theme": {
+    "@primary-color": "#FF6A00",
+    "@link-color": "#FF6A00",
+    "@border-radius-base": "2px",
+    "@font-size-base": "12px",
+    "@animation-duration-slow": ".2s",
+    "@animation-duration-base": ".2s"
+  },
+  "proxy": null,
+  "extraBabelPlugins": [
+    "transform-runtime",
+    ["import", { "libraryName": "antd", "style": true }]
+  ],
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    }
+  }
+}
